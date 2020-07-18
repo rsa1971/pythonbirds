@@ -20,7 +20,7 @@ A direção terá a responsabiliade de controlar a direção. Ela oferece os seg
 O   L
   S
     Exemplo:
-    # Testando o motor
+    >>> # Testando o motor
     >>> motor = Motor()
     >>> motor.velocidade
     0
@@ -91,6 +91,8 @@ O   L
     >>> carro.calcular_direcao()
     'Oeste'
 """
+
+
 class Carro:
     def __init__(self, direcao, motor):
         self.motor = motor
@@ -100,10 +102,10 @@ class Carro:
         return self.motor.velocidade
 
     def acelerar(self):
-        return self.motor.acelerar()
+        self.motor.acelerar()
 
     def frear(self):
-        return self.motor.frear()
+        self.motor.frear()
 
     def calcular_direcao(self):
         return self.direcao.valor
@@ -113,11 +115,6 @@ class Carro:
 
     def girar_a_esquerda(self):
         self.direcao.girar_a_esquerda()
-    # def girar_a_esquerda(self):
-    #     self.valor = self.rotacao_a_esquerda_dct[self.valor]
-    #
-    # def girar_a_direita(self):
-    #     self.valor = self.rotacao_a_direita_dct[self.valor]
 
 
 NORTE = 'Norte'
