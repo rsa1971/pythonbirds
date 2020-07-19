@@ -1,5 +1,5 @@
 class Pessoa:
-    olhos = 3
+    olhos = 2
     def __init__(self, *filhos, nome=None, idade=35):
         self.idade = idade
         self.nome=None
@@ -10,8 +10,11 @@ class Pessoa:
 class Homem(Pessoa):
     pass
 
+class Mutante(Pessoa):
+    olhos = 3
+
 if __name__ == '__main__':
-    renzo = Homem(nome='Renzo')
+    renzo = Mutante(nome='Renzo')
     luciano = Homem(renzo, nome='Luciano')
     print(Pessoa.cumprimentar(luciano))
     print(id(luciano))
@@ -35,6 +38,7 @@ if __name__ == '__main__':
     print(isinstance(pessoa, Homem))
     print(isinstance(renzo, Homem))
     print(isinstance(luciano, Homem))
+    print(renzo.olhos)
 
 
 
