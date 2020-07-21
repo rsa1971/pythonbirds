@@ -218,7 +218,7 @@ class PassaroVermelhoTests(PassaroBaseTests):
                          'Se o método lançar ainda não foi executado, deve retornar falso')
         passaro_vermelho.lancar(0, 0)
         self.assertTrue(passaro_vermelho.foi_lancado(),
-                        'Se o método lançar foi executado, deve retornar verdadeiro')
+                        'Se o método lançar foi executado, deve retornar verdadeiro')h
 
     def teste_colisao_com_chao(self):
         """
