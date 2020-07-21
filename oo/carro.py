@@ -81,13 +81,13 @@ O   L
     0
     >>> carro.calcular_direcao()
     'Norte'
-    >>> carro.girar_a_direita
+    >>> carro.girar_a_direita()
     >>> carro.calcular_direcao()
     'Leste'
-    >>> carro.girar_a_esquerda
+    >>> carro.girar_a_esquerda()
     >>> carro.calcular_direcao()
     'Norte'
-    >>> carro.girar_a_esquerda
+    >>> carro.girar_a_esquerda()
     >>> carro.calcular_direcao()
     'Oeste'
 """
